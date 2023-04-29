@@ -30,9 +30,9 @@ cp .env.example .env
 
 Then after you finish making the copy of dot env, you can generate the app encryption key
 
-'''
+```
 php artisan key:generate
-'''
+```
 
 After you finish generate the app key, you can make the database for this project. 
 The databse we use is MySQL.
