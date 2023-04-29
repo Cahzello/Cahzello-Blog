@@ -2,9 +2,9 @@
 
 @section('container')
     <div class="mb-4">
-        <h1 class="mb-4">Halaman Blog Posts</h1>
+        <h5 ><a href="/blog" class="text-decoration-none">Back To Posts</a></h5>
     </div>
-
+    
     @foreach ($posts as $post)
 
     <article class="mb-5 border-bottom pb-4">

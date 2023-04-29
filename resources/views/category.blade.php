@@ -1,7 +1,10 @@
 @extends('layouts.main')
 
 @section('container')
-    <h2 class="mb-5">Post Category : {{ $category }}</h2>
+    <div class="mb-4">
+        <h2 class="mb-5">Post Category : {{ $category }}</h2>
+        <h5><a href="/categories" class="text-decoration-none">Back to category menu</a></h5>
+    </div>
     
     @foreach ($posts as $post)
 
@@ -9,13 +12,12 @@
         <h2>
             <a href="/posts/{{ $post->slug }}">{{ $post->title }}</a>
         </h2>
-        <h5>Code: {{ $post->code }}</h5>
         <p>{{ $post->excerpt }}</p>
     </article>
 
     @endforeach
 
-    <a href="/categories">Back to category menu</a>
+    <h5><a href="/categories" class="text-decoration-none">Back to category menu</a></h5>
 
 
 @endsection 
