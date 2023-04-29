@@ -1,6 +1,6 @@
 ## Cahzello Blog
 
-This is Cahzello Blog made with Laravel for author learning process
+This is Cahzello Blog made with Laravel
 
 ## Setup Process
 
