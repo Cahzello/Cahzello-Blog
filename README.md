@@ -40,8 +40,8 @@ The databse we use is MySQL.
 You can create db with the name:
 `cahzello_blog`
 
-After make the db you can migrate the db:
-
+After done make the databse, you can change database configuration in `.env`. 
+After that you can start the migration.
 ```
 php artisan migrate
 ```
