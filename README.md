@@ -14,9 +14,11 @@ This is Cahzello Blog made with Laravel 10.
 
 ## Prerequisite
 
-PHP version at least 8.1.6,
+PHP version at least `8.1.6`,
 <br>
-Composer version at least 2.5.1
+Composer version at least `2.5.1`,
+<br>
+Serve MariaDB at least `10.4.24` or greater than that
 
 ## Step
 
