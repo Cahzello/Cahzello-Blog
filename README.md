@@ -8,65 +8,80 @@
 
 # Cahzello Blog
 
-This is Cahzello Blog made with Laravel 10.
+Welcome to Cahzello Blog, a blog application made with Laravel 10. This README file provides instructions for setting up the application.
 
 # Setup Process
 
 ## Prerequisite
 
-PHP version at least `8.1.6`,
+Before you begin, make sure you have the following software installed on your machine:
+
+- PHP version at least `8.1.6`,
 <br>
-Composer version at least `2.5.1`
+- Composer version at least `2.5.1`
+<br>
+- NodeJs version at least `16.17.1`
+<br>
+- MySQL Database
 
-## Step
+## Installation
 
-First, clone this repo 
-
+1. Clone this repository:
 ```
 git clone https://github.com/Cahzello/Cahzello-Blog.git
 ```
 
-After you clone this repo, make you sure in the repo folder. then install composer dependencies
+2. Navigate to the repository directory:
+```
+cd Cahzello-blog
+```
 
+3. Install Composer dependencies:
 ```
 composer install
 ```
 
-After finish installing composer dependencies, install npm dependecies
-
+4. Install Node.js dependencies:
 ```
 npm install
 ```
 
-After finish installing npm dependencies, make copy the example dot env 
+5. Create a copy of the `.env.example` file and rename it to `.env`:
 
 ```
 cp .env.example .env
 ```
-
-Then after you finish making the copy of dot env, you can generate the app encryption key
+6. Generate an app encryption key:
 
 ```
 php artisan key:generate
 ```
 
-After you finish generate the app key, you can make the database for this project. 
-<br>
-The databse we use is MySQL.
+7. Create a MySQL database for the application, with the name `cahzello_blog`.
 
-You can create db with the name:
-`cahzello_blog`
-
-After done make the databse, you can change database configuration in `.env`. 
 <br>
-After that you can start the migration.
+
+8. Update the `.env` file with your MySQL database credentials (like database connection).
+
+<br>
+
+9. Migrate the database:
+
 ```
 php artisan migrate
 ```
-Then after migrate the db, you can seed the db:
+10. Seed the database:
 
 ```
 php artisan db:seed
+```
+
+## Usage
+
+To run Cahzello Blog, use the following command:
+
+```
+php artisan serve
 ```
 
 Woala.. 
