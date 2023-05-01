@@ -18,7 +18,7 @@ PHP version at least `8.1.6`,
 <br>
 Composer version at least `2.5.1`,
 <br>
-Serve MariaDB at least `10.4.24` or greater than that
+Server MariaDB at least `10.4.24` or greater than that
 
 ## Step
 
