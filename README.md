@@ -16,12 +16,9 @@ Welcome to Cahzello Blog, a blog application made with Laravel 10. This README f
 
 Before you begin, make sure you have the following software installed on your machine:
 
-- PHP version at least `8.1.6`,
-<br>
+- PHP version at least `8.1.6`
 - Composer version at least `2.5.1`
-<br>
 - NodeJs version at least `16.17.1`
-<br>
 - MySQL Database
 
 ## Installation
