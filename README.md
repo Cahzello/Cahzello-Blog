@@ -83,7 +83,7 @@ php artisan serve
 
 Woala.. 
 <br>
-Now Cahzello Blog is ready to use in local development
+Now Cahzello Blog is ready to use in local development.
 
 
 
