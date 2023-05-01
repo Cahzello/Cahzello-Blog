@@ -1,8 +1,15 @@
-## Cahzello Blog
+# Cahzello Blog
 
 This is Cahzello Blog made with Laravel
 
-## Setup Process
+# Setup Process
+
+## Prerequisite
+
+PHP version at least 8.1.6,
+Composer version at least 2.5.1,
+
+### Step
 
 First, clone this repo 
 
