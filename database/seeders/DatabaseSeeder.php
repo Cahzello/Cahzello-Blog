@@ -29,5 +29,10 @@ class DatabaseSeeder extends Seeder
             'slug' => 'personal',
         ]);
 
+        Category::create([
+            'name' => 'Web Design',
+            'slug' => 'web-design',
+        ]);
+
     }
 }
