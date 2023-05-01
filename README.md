@@ -7,6 +7,7 @@ This is Cahzello Blog made with Laravel
 ## Prerequisite
 
 PHP version at least 8.1.6,
+<br>
 Composer version at least 2.5.1,
 
 ## Step
@@ -42,12 +43,14 @@ php artisan key:generate
 ```
 
 After you finish generate the app key, you can make the database for this project. 
+<br>
 The databse we use is MySQL.
 
 You can create db with the name:
 `cahzello_blog`
 
 After done make the databse, you can change database configuration in `.env`. 
+<br>
 After that you can start the migration.
 ```
 php artisan migrate
@@ -59,6 +62,7 @@ php artisan db:seed
 ```
 
 Woala.. 
+<br>
 Now Cahzello Blog is ready to use in local development
 
 
