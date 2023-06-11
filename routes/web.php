@@ -33,11 +33,11 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/blog', [PostController::class, 'index']);
+Route::get('/posts', [PostController::class, 'index']);
 
 // halaman single post
 
-Route::get('posts/{post:slug}', [PostController::class, 'show']);
+Route::get('/posts/{post:slug}', [PostController::class, 'show']);
 
 Route::get('/categories', function() {
     return view('categories', [
@@ -59,5 +59,6 @@ Route::get('/authors/{author:username}', function(User $author){
     return view('posts', [
         'title' => "Post By Author : $author->name",
         'posts' => $author->posts->load('category', 'author'),
+        'active' => 'posts',
     ]);
 });
