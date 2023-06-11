@@ -3,22 +3,29 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Category;
+use App\Http\Controllers\Controller;
 
 class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::latest();
+        $title = '';
+        if(request('category')){
+            $category = Category::firstWhere('slug', request('category'));
+            $title = ' in ' . $category->name;
+        }
 
-        if(request('search')){
-            $posts->where('title', 'like', '%' . request('search') . '%');
+        if(request('author')){
+            $user = User::firstWhere('username', request('author'));
+            $title = ' by ' . $user->name;
         }
 
         return view('posts', [
-            "title" => "All Posts",
+            "title" => "All Posts" . $title,
             "active" => "posts",
-            "posts" => $posts->get(),
+            "posts" => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(7)->withQueryString(),
         ]);
     }
 
