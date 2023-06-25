@@ -22,9 +22,10 @@ class HomeController extends Controller
         }
         
         return view('home', [
-            "title" => "Home",
+            "title" => "Home" . $title,
             "active" => "home",
-            "posts" => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(7)->withQueryString(),
+            'categories' => Category::all(),
+            "posts" => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(3)->withQueryString(),
 
         ]);
     }

@@ -3,7 +3,7 @@
 @section('container')
 <h1 class="mb-5">Post Categories</h1>
 
-    <div class="container">
+    <div class="container mb-4">
         <div class="row">
             @foreach ($categories as $category)
                 
@@ -17,6 +17,7 @@
                     </div>
                 </a>
             </div>
+
             
             @endforeach
         </div>
