@@ -5,6 +5,7 @@
         <h1 class="h2">Create New Post</h1>
     </div>
 
+
     <div class="col-lg-8">
         <form method="POST" action="/dashboard/posts" class="mb-5" enctype="multipart/form-data">
             @csrf
@@ -42,7 +43,8 @@
             </div>
             <div class="mb-3">
                 <label for="image" class="form-label">Post Image</label>
-                <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" accept="image/*">
+                <img class="img-preview img-fluid mb-3 col-sm-5">
+                <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" accept="image/*" onchange="previewImage()">
                 @error('image')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -76,5 +78,16 @@
         document.addEventListener('trix-file-accept', function(e) {
             e.preventDefault();
         });
+
+        function previewImage () {
+            const image = document.querySelector('#image');
+            const imgPreview = document.querySelector('.img-preview');
+
+            imgPreview.style.display = 'block';
+
+            const blob = URL.createObjectURL(image.files[0]);
+            imgPreview.src = blob;
+
+        }
     </script>
 @endsection
