@@ -4,13 +4,13 @@
         <!-- Section: Social media -->
         <section class="mb-4">
             <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/rizkyrasya_" role="button"><i class="bi bi-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" rel="noopener noreferrer" href="https://twitter.com/rizkyrasya_" role="button"><i class="bi bi-twitter"></i></a>
                     
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/_rizkyrasya" role="button"><i class="bi bi-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" rel="noopener noreferrer" href="https://instagram.com/_rizkyrasya" role="button"><i class="bi bi-instagram"></i></a>
                                         
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Cahzello" role="button"><i class="bi bi-github"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" rel="noopener noreferrer" href="https://github.com/Cahzello" role="button"><i class="bi bi-github"></i></a>
                     
         </section>
         <!-- Section: Social media -->

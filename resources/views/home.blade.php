@@ -8,7 +8,7 @@
                 Welcome to our website, where you'll find a fusion of website programming information and personal sharing,
                 connecting programmers through insightful articles and personal stories.</p>
             <p class="lead">
-                <a href="/login" class="btn btn-lg border-white bg-warning">Learn more</a>
+                <a href="/login" class="btn btn-lg btn-outline-dark">Learn more</a>
             </p>
         </div>
 

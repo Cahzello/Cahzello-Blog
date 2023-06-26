@@ -20,6 +20,8 @@ use App\Http\Controllers\DashboardPostController;
 |
 */
 
+
+
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/about', function () {
@@ -66,3 +68,11 @@ Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'check
 Route::resource('/dashboard/posts', DashboardPostController::class)->middleware('auth');
 
 Route::resource('/dashboard/categories', AdminCategoryController::class)->except('show');
+
+// no route found handling
+
+Route::any('{url}', function(){
+    return  view('errors.any');    
+})->where('url', '.*');
+
+// ---
