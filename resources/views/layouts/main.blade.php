@@ -25,7 +25,7 @@
         }
 
         body {
-            margin-bottom: 160px;
+            margin-bottom: 180px;
             /* Margin bottom by footer height */
         }
 

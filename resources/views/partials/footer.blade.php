@@ -3,23 +3,14 @@
     <div class="container p-4 pb-0">
         <!-- Section: Social media -->
         <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"><i class="bi bi-facebook"></i></a>
-
             <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"><i class="bi bi-twitter"></i></a>
-                    
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"><i class="bi bi-google"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/rizkyrasya_" role="button"><i class="bi bi-twitter"></i></a>
                     
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"><i class="bi bi-instagram"></i></a>
-                    
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"><i class="bi bi-linkedin"></i></a>
-                    
+            <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/_rizkyrasya" role="button"><i class="bi bi-instagram"></i></a>
+                                        
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"><i class="bi bi-github"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Cahzello" role="button"><i class="bi bi-github"></i></a>
                     
         </section>
         <!-- Section: Social media -->

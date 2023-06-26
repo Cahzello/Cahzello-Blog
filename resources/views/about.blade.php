@@ -3,7 +3,7 @@
 @section('container')
 <main class="px-3">
     <div>
-        <h1 class="text-center">About</h1>
+        <h1 class="text-center my-4">About</h1>
         <div class="container text-start my-auto">
             <p class="lead">
                 Welcome to our Blogger website! We are thrilled to have you here and introduce you to a platform designed for sharing and connecting with a global audience. As you navigate through our website's first home page, you'll discover a world of creative possibilities and insightful content.
